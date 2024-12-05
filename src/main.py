@@ -26,6 +26,21 @@ driveTrain = DriveTrain(leftMotor, rightMotor)
 intakeMotor = Motor(Ports.PORT13)
 
 
+
+# listeners
+def driveLeftJoystickChanged():
+    driveTrain.drive(FORWARD, driveController.axis3.position(), PERCENT)
+    # # with open("data.txt", "a") as f:
+    #     # f.write(str(driveController.axis3.position()) + "\n")
+    # brain.screen.clear_screen()
+    # brain.screen.print(driveController.axis3.position())
+    # brain.screen.next_row()
+    # brain.screen.print("ASDJHKL")
+driveController.axis3.changed(driveLeftJoystickChanged)
+# while True:
+#     driveLeftJoystickChanged()
+#     time.sleep(0.15)
+
 brain.screen.print("Hello V5")
 
 

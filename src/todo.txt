@@ -1,0 +1,5 @@
+Drive Controller:
+L2 & R2 go 90 degrees in the appropriate direction
+L1 (or something) 180 degree turn
+left joystick forward and back is forward and back (left and right does nothing)
+Right joystick is the opposite, up and down do nothing, left and right move appropriately.
